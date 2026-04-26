@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   BedDouble, MessageSquare, Bell, CreditCard, Users, Shield,
   BarChart2, CheckCircle, ArrowRight, Layers, Globe,
