@@ -48,7 +48,7 @@ A modern, futuristic single-page application for managing hostel operations. Bui
 | **Language** | TypeScript 5.7 | Strict mode enabled |
 | **Charts** | Chart.js + react-chartjs-2 | Data visualization |
 | **Fonts** | Sora + DM Sans | Google Fonts via CSS |
-| **Deployment** | Netlify | Zero-config deployment |
+| **Deployment** | Vercel | Auto-deploy on git push |
 
 ---
 
@@ -408,19 +408,14 @@ The admin dashboard displays mock data:
 
 ## 🚢 Deployment
 
-This project is configured for **Netlify** deployment:
+This project is configured for **Vercel** deployment with auto-deployment on every git push:
 
 ```bash
 npm run build
-# Upload the dist/ directory to Netlify
+# Vercel automatically deploys the dist/ directory
 ```
 
-Configuration in `netlify.toml`:
-```toml
-[build]
-  command = "npm run build"
-  publish = "dist"
-```
+Visit: **https://vercel.com** to connect your GitHub repository for instant deployment.
 
 ---
 

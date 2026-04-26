@@ -26,9 +26,6 @@ out/
 *~
 .DS_Store
 
-# Netlify
-.netlify/
-
 # Runtime data
 pids/
 *.pid
