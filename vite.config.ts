@@ -15,6 +15,17 @@ const config = defineConfig({
     tanstackStart(),
     viteReact(),
   ],
+  build: {
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Suppress external library warnings
+        if (warning.code === 'UNUSED_EXTERNAL_IMPORT') {
+          return
+        }
+        warn(warning)
+      },
+    },
+  },
 })
 
 export default config
